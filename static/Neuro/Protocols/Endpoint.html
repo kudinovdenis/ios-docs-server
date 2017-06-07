@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Endpoint Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/Endpoint" class="dashAnchor"></a>
+    <a title="Endpoint Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Neuro Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Neuro Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Endpoint Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Basic.html">Basic</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Basic.html#/s:P5Neuro9Transport">Transport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Endpoint.html">Endpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Explorer.html">Explorer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Transports.html">Transports</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HTTP.html">HTTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WebSocket.html">WebSocket</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Endpoint</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Endpoint</span></code></pre>
+
+                </div>
+              </div>
+            <p>High-level unit that represents server or other endpoint within the network.</p>
+
+<p>Basically it comes with concrete transport association, 
+but you&rsquo;re able to implement <strong>generic endpoints</strong> with transport as constraint.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P5Neuro8Endpoint17ConcreteTransport"></a>
+                    <a name="//apple_ref/swift/Alias/ConcreteTransport" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P5Neuro8Endpoint17ConcreteTransport">ConcreteTransport</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transport type which is used to access this endpoint.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">ConcreteTransport</span><span class="p">:</span> <span class="kt"><a href="../Basic.html#/s:P5Neuro9Transport">Transport</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP5Neuro8Endpoint7addressWx17ConcreteTransport7Address_"></a>
+                    <a name="//apple_ref/swift/Property/address" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP5Neuro8Endpoint7addressWx17ConcreteTransport7Address_">address</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Base address that reflects origin of the endpoint itself.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Endpoint.html#/s:P5Neuro8Endpoint17ConcreteTransport">ConcreteTransport</a></span><span class="o">.</span><span class="kt">Address</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP5Neuro8Endpoint9transportwx17ConcreteTransport"></a>
+                    <a name="//apple_ref/swift/Property/transport" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP5Neuro8Endpoint9transportwx17ConcreteTransport">transport</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transport entity which will be used by endpoint logic.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">transport</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Endpoint.html#/s:P5Neuro8Endpoint17ConcreteTransport">ConcreteTransport</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://acronis.com/" target="_blank" rel="external">Acronis International GmbH</a>. All rights reserved. (Last updated: 2017-06-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

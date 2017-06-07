@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTTP Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/HTTP" class="dashAnchor"></a>
+    <a title="HTTP Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Neuro Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Neuro Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HTTP Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Basic.html">Basic</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Basic.html#/s:P5Neuro9Transport">Transport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Endpoint.html">Endpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Explorer.html">Explorer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Transports.html">Transports</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HTTP.html">HTTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WebSocket.html">WebSocket</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HTTP</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HTTP</span><span class="p">:</span> <span class="kt"><a href="../Basic.html#/s:P5Neuro9Transport">Transport</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A protocol defining OSI&rsquo;s HTTP/S application abstraction layer.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P5Neuro4HTTP7Request"></a>
+                    <a name="//apple_ref/swift/Alias/Request" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P5Neuro4HTTP7Request">Request</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Input for all HTTP tasks.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">Request</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P5Neuro4HTTP8Response"></a>
+                    <a name="//apple_ref/swift/Alias/Response" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P5Neuro4HTTP8Response">Response</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result of all HTTP tasks.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">Response</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P5Neuro4HTTP4Task"></a>
+                    <a name="//apple_ref/swift/Alias/Task" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P5Neuro4HTTP4Task">Task</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Common type representing an entity that holds any data for internal use
+and provides unique token for additional methods to work with.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">Task</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P5Neuro4HTTP6Status"></a>
+                    <a name="//apple_ref/swift/Alias/Status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P5Neuro4HTTP6Status">Status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Aggregated information which will be provided for any existed or existing <code><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">associatedtype</span> <span class="kt">Status</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP5Neuro4HTTP4taskFzT3forwx7Request2onwx7Address_wx4Task"></a>
+                    <a name="//apple_ref/swift/Method/task(for:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP5Neuro4HTTP4taskFzT3forwx7Request2onwx7Address_wx4Task">task(for:on:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fabric method provides assembled and verifyed entity ready to be sent over the network.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>This does not actually start any network activity.
+Instead, you&rsquo;ve got only assembled token for further perform in any suitable place.</p>
+
+</div>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Any custom error declared by code that implements this protocol.
+In common this error reflects input validation error, but it could mean
+any error during any custom behaviour implemented in concrete HTTP transport.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">task</span><span class="p">(</span><span class="k">for</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP7Request">Request</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">address</span><span class="p">:</span> <span class="kt">Address</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Common input entity which you should have describing your HTTP request including
+<code>headers</code>, <code>body</code>, <code>method</code> and anything specific for concrete implementation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Resource address in terms of this concrete HTTP transport.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Mentioned <code><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></code> entity for further usage.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP5Neuro4HTTP7performFzT4taskwx4Task_wx8Response"></a>
+                    <a name="//apple_ref/swift/Method/perform(task:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP5Neuro4HTTP7performFzT4taskwx4Task_wx8Response">perform(task:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Actually performs <code><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></code> provided in the previous step.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Any custom error declared by code that implements this protocol.
+Reflects any error during the network request
+related to HTTP or lower OSI level.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">perform</span><span class="p">(</span><span class="nv">task</span><span class="p">:</span> <span class="kt"><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP8Response">Response</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Task</code> entity you&rsquo;ve got as result of according fabric method.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Actual common <code><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP8Response">Response</a></code> of concrete HTTP transport.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP5Neuro4HTTP6statusFzT2ofwx4Task_wx6Status"></a>
+                    <a name="//apple_ref/swift/Method/status(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP5Neuro4HTTP6statusFzT2ofwx4Task_wx6Status">status(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current information for specified <code><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></code>.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Reflects status as it is for the moment when method was called.
+Could and mostly should be called from any thread that
+is not the same where was called <code>perform()</code> method.</p>
+
+</div>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Any custom error declared by code that implements this protocol.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">status</span><span class="p">(</span><span class="n">of</span> <span class="nv">task</span><span class="p">:</span> <span class="kt"><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP6Status">Status</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Task</code> entity you&rsquo;ve got as result of according fabric method.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP6Status">Status</a></code> entity describing neccesary information of the <code><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></code>
+specific for concrete HTTP transport implementation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP5Neuro4HTTP6cancelFzT4taskwx4Task_T_"></a>
+                    <a name="//apple_ref/swift/Method/cancel(task:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP5Neuro4HTTP6cancelFzT4taskwx4Task_T_">cancel(task:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Does cancellation and invalidation of the provided <code><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></code>.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Should be called only once. In other case error will be thrown.</p>
+
+</div>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Any custom error declared by code that implements this protocol.
+Does not throw when success.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">cancel</span><span class="p">(</span><span class="nv">task</span><span class="p">:</span> <span class="kt"><a href="../Protocols/HTTP.html#/s:P5Neuro4HTTP4Task">Task</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Task</code> entity you&rsquo;ve got as result of according fabric method.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://acronis.com/" target="_blank" rel="external">Acronis International GmbH</a>. All rights reserved. (Last updated: 2017-06-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

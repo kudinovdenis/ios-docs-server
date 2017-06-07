@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>URLQueryConverter Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/URLQueryConverter" class="dashAnchor"></a>
+    <a title="URLQueryConverter Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Alchemy Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Alchemy Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        URLQueryConverter Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../RESTful Converters.html">RESTful Converters</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/JSONConverter.html">JSONConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JSONConverter/Native.html">– Native</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JSONConverter/Errors.html">– Errors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../URL Converters.html">URL Converters</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/URLFormConverter.html">URLFormConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLFormConverter/Errors.html">– Errors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLQueryConverter.html">URLQueryConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLQueryConverter/Errors.html">– Errors</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>URLQueryConverter</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">URLQueryConverter</span><span class="p">:</span> <span class="kt">Converter</span></code></pre>
+
+                </div>
+              </div>
+            <p>Foundation converter for transforming list of key-value pairs into Query String.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C7Alchemy17URLQueryConverter8External"></a>
+                    <a name="//apple_ref/swift/Alias/External" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C7Alchemy17URLQueryConverter8External">External</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>External</code> type is list of <code>URLQueryItem</code> since it most convenient way to store and use it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">External</span> <span class="o">=</span> <span class="p">[</span><span class="kt">URLQueryItem</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C7Alchemy17URLQueryConverter6Native"></a>
+                    <a name="//apple_ref/swift/Alias/Native" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C7Alchemy17URLQueryConverter6Native">Native</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Native</code> type is just <code>Dictionary</code> where keys are always <code>String</code><strong>s</strong> and values could be <code>Any</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Native</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">?]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC7Alchemy17URLQueryConverter6Errors"></a>
+                    <a name="//apple_ref/swift/Enum/Errors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC7Alchemy17URLQueryConverter6Errors">Errors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Possible errors that could be thrown at some point.</p>
+
+                        <a href="../Classes/URLQueryConverter/Errors.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Errors</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7Alchemy17URLQueryConvertercFT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7Alchemy17URLQueryConvertercFT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Designated and the only initializer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7Alchemy17URLQueryConverter9serializeFzT6nativeGVs10DictionarySSGSqP____GSaV10Foundation12URLQueryItem_"></a>
+                    <a name="//apple_ref/swift/Method/serialize(native:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7Alchemy17URLQueryConverter9serializeFzT6nativeGVs10DictionarySSGSqP____GSaV10Foundation12URLQueryItem_">serialize(native:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convers provided key-value pairs to list of <code>URLQueryItem</code>.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Does not throw.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">serialize</span><span class="p">(</span><span class="nv">native</span><span class="p">:</span> <span class="kt"><a href="../Classes/URLQueryConverter.html#/s:C7Alchemy17URLQueryConverter6Native">Native</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/URLQueryConverter.html#/s:C7Alchemy17URLQueryConverter8External">External</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>native</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Input key-value pairs describing parameters to serialize.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>List of <code>URLQueryItem</code> which could be used in Foundation classes, for example.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7Alchemy17URLQueryConverter11deserializeFzT8externalGSaV10Foundation12URLQueryItem__GVs10DictionarySSGSqP___"></a>
+                    <a name="//apple_ref/swift/Method/deserialize(external:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7Alchemy17URLQueryConverter11deserializeFzT8externalGSaV10Foundation12URLQueryItem__GVs10DictionarySSGSqP___">deserialize(external:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts list of <code>URLQueryItem</code> as <code><a href="../Classes/URLQueryConverter.html#/s:C7Alchemy17URLQueryConverter8External">External</a></code> back to bunch of key-value pairs.</p>
+<div class="aside aside-to-do">
+    <p class="aside-title">To do</p>
+    <p>Implement this.</p>
+
+</div>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Appropriate Foundation error will be re-thrown from the inside if anything went wrong.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deserialize</span><span class="p">(</span><span class="nv">external</span><span class="p">:</span> <span class="kt"><a href="../Classes/URLQueryConverter.html#/s:C7Alchemy17URLQueryConverter8External">External</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/URLQueryConverter.html#/s:C7Alchemy17URLQueryConverter6Native">Native</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>external</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List of &lsquo;URLQueryItem` which is representation of Query String.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Map of key-value pairs.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://acronis.com/" target="_blank" rel="external">Acronis International GmbH</a>. All rights reserved. (Last updated: 2017-06-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

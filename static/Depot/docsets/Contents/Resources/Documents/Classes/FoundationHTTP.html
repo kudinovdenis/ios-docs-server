@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FoundationHTTP Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/FoundationHTTP" class="dashAnchor"></a>
+    <a title="FoundationHTTP Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Depot Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Depot Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        FoundationHTTP Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Overview.html">Overview</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationHTTP.html">FoundationHTTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationHTTP/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationHTTP/Request.html">– Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">– Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationHTTP/Errors.html">– Errors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationHTTP/Status.html">– Status</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/URLComponents.html">URLComponents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/HTTPURLResponse.html">HTTPURLResponse</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>FoundationHTTP</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FoundationHTTP</span><span class="p">:</span> <span class="kt">HTTP</span></code></pre>
+
+                </div>
+              </div>
+            <p>Custom implementation of HTTP transport which utilizes Foundation framework.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C5Depot14FoundationHTTP7Address"></a>
+                    <a name="//apple_ref/swift/Alias/Address" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C5Depot14FoundationHTTP7Address">Address</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>In terms of Foundation we use URL objects to represent addresses.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Address</span> <span class="o">=</span> <span class="kt">URL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC5Depot14FoundationHTTP8Response"></a>
+                    <a name="//apple_ref/swift/Struct/Response" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC5Depot14FoundationHTTP8Response">Response</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Custom <code>Response</code> structure w/ data available through <code>Optional</code> and underlying foundation HTTP reponse.</p>
+
+                        <a href="../Classes/FoundationHTTP/Response.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Response</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Usage"></a>
+                <a name="//apple_ref/swift/Section/Usage" class="dashAnchor"></a>
+                <a href="#/Usage">
+                  <h3 class="section-name">Usage</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC5Depot14FoundationHTTPcFT27backgroundSessionIdentifierSS_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(backgroundSessionIdentifier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC5Depot14FoundationHTTPcFT27backgroundSessionIdentifierSS_S0_">init(backgroundSessionIdentifier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Designated and the only initializer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">backgroundSessionIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>backgroundSessionIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique identifier for this instance of the class.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Implementation"></a>
+                <a name="//apple_ref/swift/Section/Implementation" class="dashAnchor"></a>
+                <a href="#/Implementation">
+                  <h3 class="section-name">Implementation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC5Depot14FoundationHTTP4taskFzT3forVS0_7Request2onV10Foundation3URL_VS0_4Task"></a>
+                    <a name="//apple_ref/swift/Method/task(for:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC5Depot14FoundationHTTP4taskFzT3forVS0_7Request2onV10Foundation3URL_VS0_4Task">task(for:on:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Task creation. Network activity will not actually start.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error of <code><a href="../Classes/FoundationHTTP/Errors/Generate.html">Errors.Generate</a></code> type could be thrown if the process fails.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">task</span><span class="p">(</span><span class="k">for</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/FoundationHTTP/Request.html">Request</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Classes/FoundationHTTP.html#/s:C5Depot14FoundationHTTP7Address">Address</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Request</code> entity describing HTTP specific fields including relative <strong>path</strong>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>URL</code> entity represents origin address.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></code> prepared to execute.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC5Depot14FoundationHTTP7performFzT4taskVS0_4Task_VS0_8Response"></a>
+                    <a name="//apple_ref/swift/Method/perform(task:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC5Depot14FoundationHTTP7performFzT4taskVS0_4Task_VS0_8Response">perform(task:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performing HTTP requests.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error of <code><a href="../Classes/FoundationHTTP/Errors/Perform.html">Errors.Perform</a></code> type could be thrown if the process fails. 
+In rare cases could be thrown <code><a href="../Classes/FoundationHTTP/Errors/Generate.html">Errors.Generate</a></code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">perform</span><span class="p">(</span><span class="nv">task</span><span class="p">:</span> <span class="kt"><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FoundationHTTP/Response.html">Response</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Task</code> you&rsquo;ve got in previous step.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/FoundationHTTP/Response.html">Response</a></code> structure with body (if exists) and underlying Foundation response.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC5Depot14FoundationHTTP6statusFzT2ofVS0_4Task_VS0_6Status"></a>
+                    <a name="//apple_ref/swift/Method/status(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC5Depot14FoundationHTTP6statusFzT2ofVS0_4Task_VS0_6Status">status(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch status of the <code><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></code> at the moment.
+Can (and mostly should) be called from separate thread than <code>perform</code> method has been called.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Does not throw in current implementation.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">status</span><span class="p">(</span><span class="n">of</span> <span class="nv">task</span><span class="p">:</span> <span class="kt"><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FoundationHTTP/Status.html">Status</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Task</code> which has already been started.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/FoundationHTTP/Status.html">Status</a></code> structure with essential numbers inside.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC5Depot14FoundationHTTP6cancelFzT4taskVS0_4Task_T_"></a>
+                    <a name="//apple_ref/swift/Method/cancel(task:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC5Depot14FoundationHTTP6cancelFzT4taskVS0_4Task_T_">cancel(task:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancels <code><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></code> which is in work.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Does not throw in current implementation.
+
+</div>
+<div class="aside aside-to-do">
+    <p class="aside-title">To do</p>
+    Should <code>throw</code> when trying to cancel task which is cancelled already.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cancel</span><span class="p">(</span><span class="nv">task</span><span class="p">:</span> <span class="kt"><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Task</code> which has already been started.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC5Depot14FoundationHTTP7Request"></a>
+                    <a name="//apple_ref/swift/Struct/Request" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC5Depot14FoundationHTTP7Request">Request</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Custom <code>Request</code> structure describing details of Foundation implementation of HTTP.</p>
+
+                        <a href="../Classes/FoundationHTTP/Request.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Request</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC5Depot14FoundationHTTP4Task"></a>
+                    <a name="//apple_ref/swift/Struct/Task" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC5Depot14FoundationHTTP4Task">Task</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique token which is ready to go over the network.</p>
+
+<p>Could be performed only once.</p>
+
+<p>Could be cancelled from separate thread as well as monitored using appropriate method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Task</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vVC5Depot14FoundationHTTP4Task9hashValueSi"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vVC5Depot14FoundationHTTP4Task9hashValueSi">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></code> adopts <code>Hashable</code> protocol, so here we are.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFVC5Depot14FoundationHTTP4Taskoi2eeFTS1_S1__Sb"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFVC5Depot14FoundationHTTP4Taskoi2eeFTS1_S1__Sb">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></code> adopts <code>Equatable</code> protocol comparing hash values of each other.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">FoundationHTTP</span><span class="o">.</span><span class="kt"><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">FoundationHTTP</span><span class="o">.</span><span class="kt"><a href="../Classes/FoundationHTTP.html#/s:VC5Depot14FoundationHTTP4Task">Task</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC5Depot14FoundationHTTP6Errors"></a>
+                    <a name="//apple_ref/swift/Enum/Errors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC5Depot14FoundationHTTP6Errors">Errors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Head point of all errors that could be thrown by <code><a href="../Classes/FoundationHTTP.html">FoundationHTTP</a></code>.</p>
+
+                        <a href="../Classes/FoundationHTTP/Errors.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Errors</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC5Depot14FoundationHTTP6Status"></a>
+                    <a name="//apple_ref/swift/Struct/Status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC5Depot14FoundationHTTP6Status">Status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Common numbers of currently running task packed in essential structure.</p>
+
+                        <a href="../Classes/FoundationHTTP/Status.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Status</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://acronis.com/" target="_blank" rel="external">Acronis International GmbH</a>. All rights reserved. (Last updated: 2017-06-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
