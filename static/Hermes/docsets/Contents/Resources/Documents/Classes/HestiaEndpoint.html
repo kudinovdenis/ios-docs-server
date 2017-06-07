@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HermesEndpoint Class Reference</title>
+    <title>HestiaEndpoint Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,18 +10,18 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/HermesEndpoint" class="dashAnchor"></a>
-    <a title="HermesEndpoint Class Reference"></a>
+    <a name="//apple_ref/swift/Class/HestiaEndpoint" class="dashAnchor"></a>
+    <a title="HestiaEndpoint Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Hermes Docs</a> (100% documented)</p>
+        <p><a href="../index.html">Hestia Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../index.html">Hermes Reference</a>
+        <a href="../index.html">Hestia Reference</a>
         <img id="carat" src="../img/carat.png" />
-        HermesEndpoint Class Reference
+        HestiaEndpoint Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -31,10 +31,13 @@
             <a href="../Explorers.html">Explorers</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/HermesExplorer.html">HermesExplorer</a>
+                <a href="../Classes/HestiaCloudExplorer.html">HestiaCloudExplorer</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/HermesExplorer/Receipt.html">– Receipt</a>
+                <a href="../Classes/HestiaCloudExplorer/Receipt.html">– Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HestiaCloudExplorer/Errors.html">– Errors</a>
               </li>
             </ul>
           </li>
@@ -42,13 +45,13 @@
             <a href="../Endpoint.html">Endpoint</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/HermesEndpoint.html">HermesEndpoint</a>
+                <a href="../Classes/HestiaEndpoint.html">HestiaEndpoint</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/HermesEndpoint/Origin.html">– Origin</a>
+                <a href="../Classes/HestiaEndpoint/Errors.html">– Errors</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/HermesEndpoint/Errors.html">– Errors</a>
+                <a href="../Classes/HestiaEndpoint/Credentials.html">– Credentials</a>
               </li>
             </ul>
           </li>
@@ -57,14 +60,17 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>HermesEndpoint</h1>
+            <h1>HestiaEndpoint</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HermesEndpoint</span><span class="p">:</span> <span class="kt">Endpoint</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HestiaEndpoint</span><span class="p">:</span> <span class="kt">Endpoint</span></code></pre>
 
                 </div>
               </div>
-            <p>Endpoint in terms of Neuro for communication with Boris server(s).</p>
+            <p>Endpoint in terms of Neuro for communication with IDP server(s). 
+Please note that instances of this enpoint could connect to many 
+different servers located in different networks. To retrieve appropriate
+instance you should use according <code>Explorer</code>.</p>
 
           </section>
           <section class="section task-group-section">
@@ -73,9 +79,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:C6Hermes14HermesEndpoint17ConcreteTransport"></a>
+                    <a name="/s:C6Hestia14HestiaEndpoint17ConcreteTransport"></a>
                     <a name="//apple_ref/swift/Alias/ConcreteTransport" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C6Hermes14HermesEndpoint17ConcreteTransport">ConcreteTransport</a>
+                    <a class="token" href="#/s:C6Hestia14HestiaEndpoint17ConcreteTransport">ConcreteTransport</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -100,9 +106,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC6Hermes14HermesEndpoint7addressV10Foundation3URL"></a>
+                    <a name="/s:vC6Hestia14HestiaEndpoint7addressV10Foundation3URL"></a>
                     <a name="//apple_ref/swift/Property/address" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC6Hermes14HermesEndpoint7addressV10Foundation3URL">address</a>
+                    <a class="token" href="#/s:vC6Hestia14HestiaEndpoint7addressV10Foundation3URL">address</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -127,9 +133,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC6Hermes14HermesEndpoint9transportC5Depot14FoundationHTTP"></a>
+                    <a name="/s:vC6Hestia14HestiaEndpoint9transportC5Depot14FoundationHTTP"></a>
                     <a name="//apple_ref/swift/Property/transport" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC6Hermes14HermesEndpoint9transportC5Depot14FoundationHTTP">transport</a>
+                    <a class="token" href="#/s:vC6Hestia14HestiaEndpoint9transportC5Depot14FoundationHTTP">transport</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -158,9 +164,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:VC6Hermes14HermesEndpoint6Origin"></a>
-                    <a name="//apple_ref/swift/Struct/Origin" class="dashAnchor"></a>
-                    <a class="token" href="#/s:VC6Hermes14HermesEndpoint6Origin">Origin</a>
+                    <a name="/s:OC6Hestia14HestiaEndpoint6Errors"></a>
+                    <a name="//apple_ref/swift/Enum/Errors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC6Hestia14HestiaEndpoint6Errors">Errors</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -168,15 +174,48 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Origin structure packed with essential data that you need to communicate with other cloud Acronis services.</p>
+                        <p>Errors related to server logic or this enpoint itself.</p>
 
-                        <a href="../Classes/HermesEndpoint/Origin.html" class="slightly-smaller">See more</a>
+                        <a href="../Classes/HestiaEndpoint/Errors.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Origin</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Errors</span><span class="p">:</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VC6Hestia14HestiaEndpoint11Credentials"></a>
+                    <a name="//apple_ref/swift/Struct/Credentials" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VC6Hestia14HestiaEndpoint11Credentials">Credentials</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure that holds needed information about user to 
+perform requests to anything in Acronis infrastrcuture.</p>
+
+                        <a href="../Classes/HestiaEndpoint/Credentials.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Credentials</span></code></pre>
 
                         </div>
                       </div>
@@ -186,9 +225,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC6Hermes14HermesEndpoint6originFzT3forSS_VS0_6Origin"></a>
-                    <a name="//apple_ref/swift/Method/origin(for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC6Hermes14HermesEndpoint6originFzT3forSS_VS0_6Origin">origin(for:)</a>
+                    <a name="/s:FC6Hestia14HestiaEndpoint9authorizeFzT5loginSS8passwordSS_VS0_11Credentials"></a>
+                    <a name="//apple_ref/swift/Method/authorize(login:password:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6Hestia14HestiaEndpoint9authorizeFzT5loginSS8passwordSS_VS0_11Credentials">authorize(login:password:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -196,11 +235,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The only API method for retrieving base address for all Cloud Acronis services.</p>
+                        <p>Initial authorization of the user.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    Any appropriated error from transport, coverter or other component. 
-Errors related to this method logic, or server logic are contained within the <code><a href="../Classes/HermesEndpoint/Errors.html">Errors</a></code> enumeration.
+    Any appropriated error from transport, converter or other component.
+Errors related to this method logic, or server logic are contained within the <code><a href="../Classes/HestiaEndpoint/Errors.html">Errors</a></code> enumeration.
 
 </div>
 
@@ -209,7 +248,7 @@ Errors related to this method logic, or server logic are contained within the <c
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">origin</span><span class="p">(</span><span class="k">for</span> <span class="nv">login</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/HermesEndpoint/Origin.html">Origin</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">authorize</span><span class="p">(</span><span class="nv">login</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/HestiaEndpoint/Credentials.html">Credentials</a></span></code></pre>
 
                         </div>
                       </div>
@@ -225,7 +264,19 @@ Errors related to this method logic, or server logic are contained within the <c
                               </td>
                               <td>
                                 <div>
-                                  <p>Login provided by user.</p>
+                                  <p>Login provided by the user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Password provided by the user.</p>
                                 </div>
                               </td>
                             </tr>
@@ -234,21 +285,18 @@ Errors related to this method logic, or server logic are contained within the <c
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p><code><a href="../Classes/HermesEndpoint/Origin.html">Origin</a></code> structure wich you will need for cloud explorers of other endpoints.</p>
+                        <p><code><a href="../Classes/HestiaEndpoint/Credentials.html">Credentials</a></code> structure packed with all needed 
+for further requests and updating request when it will become expired.</p>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:OC6Hermes14HermesEndpoint6Errors"></a>
-                    <a name="//apple_ref/swift/Enum/Errors" class="dashAnchor"></a>
-                    <a class="token" href="#/s:OC6Hermes14HermesEndpoint6Errors">Errors</a>
+                    <a name="/s:FC6Hestia14HestiaEndpoint9authorizeFzT4withVS0_11Credentials_S1_"></a>
+                    <a name="//apple_ref/swift/Method/authorize(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6Hestia14HestiaEndpoint9authorizeFzT4withVS0_11Credentials_S1_">authorize(with:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -256,17 +304,45 @@ Errors related to this method logic, or server logic are contained within the <c
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Errors related to server logic or this enpoint itself.</p>
+                        <p>Refreshing <code><a href="../Classes/HestiaEndpoint/Credentials.html">Credentials</a></code> of the user if they are expired.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any appropriated error from transport, converter or other component.
+Errors related to this method logic, or server logic are contained within the <code><a href="../Classes/HestiaEndpoint/Errors.html">Errors</a></code> enumeration.
 
-                        <a href="../Classes/HermesEndpoint/Errors.html" class="slightly-smaller">See more</a>
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Errors</span><span class="p">:</span> <span class="kt">Error</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">authorize</span><span class="p">(</span><span class="n">with</span> <span class="nv">credentials</span><span class="p">:</span> <span class="kt"><a href="../Classes/HestiaEndpoint/Credentials.html">Credentials</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/HestiaEndpoint/Credentials.html">Credentials</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>credentials</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Currently using <code>Credentials</code> which you blieve are expired.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Fresh <code><a href="../Classes/HestiaEndpoint/Credentials.html">Credentials</a></code> entity which you have to use since the moment.</p>
                       </div>
                     </section>
                   </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hermes  Reference</title>
+    <title>Hestia  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,17 +10,17 @@
     
   </head>
   <body>
-    <a title="Hermes  Reference"></a>
+    <a title="Hestia  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Hermes Docs</a> (100% documented)</p>
+        <p><a href="index.html">Hestia Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="index.html">Hermes Reference</a>
+        <a href="index.html">Hestia Reference</a>
         <img id="carat" src="img/carat.png" />
-        Hermes  Reference
+        Hestia  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -30,10 +30,13 @@
             <a href="Explorers.html">Explorers</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/HermesExplorer.html">HermesExplorer</a>
+                <a href="Classes/HestiaCloudExplorer.html">HestiaCloudExplorer</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/HermesExplorer/Receipt.html">– Receipt</a>
+                <a href="Classes/HestiaCloudExplorer/Receipt.html">– Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HestiaCloudExplorer/Errors.html">– Errors</a>
               </li>
             </ul>
           </li>
@@ -41,13 +44,13 @@
             <a href="Endpoint.html">Endpoint</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/HermesEndpoint.html">HermesEndpoint</a>
+                <a href="Classes/HestiaEndpoint.html">HestiaEndpoint</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/HermesEndpoint/Origin.html">– Origin</a>
+                <a href="Classes/HestiaEndpoint/Errors.html">– Errors</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/HermesEndpoint/Errors.html">– Errors</a>
+                <a href="Classes/HestiaEndpoint/Credentials.html">– Credentials</a>
               </li>
             </ul>
           </li>
@@ -57,15 +60,16 @@
         <section>
           <section class="section">
             
-            <h2 id='hermes' class='heading'>Hermes</h2>
+            <h2 id='hestia' class='heading'>Hestia</h2>
 
-<p>Swift framework contains endpoint for communication with Boris @ Acronis.</p>
+<p>Swift framework contains endpoint for communication with IDP @ Acronis.</p>
 <h3 id='dependencies' class='heading'>Dependencies</h3>
 
 <ul>
 <li>Neuro — <a href="https://git.acronis.com/projects/AMB/repos/neuro">https://git.acronis.com/projects/AMB/repos/neuro</a></li>
 <li>Depot — <a href="https://git.acronis.com/projects/AMB/repos/depot">https://git.acronis.com/projects/AMB/repos/depot</a></li>
 <li>Alchemy — <a href="https://git.acronis.com/projects/AMB/repos/alchemy">https://git.acronis.com/projects/AMB/repos/alchemy</a></li>
+<li>Hermes — <a href="https://git.acronis.com/projects/AMB/repos/hermes">https://git.acronis.com/projects/AMB/repos/hermes</a></li>
 </ul>
 <h3 id='how-to-build' class='heading'>How to Build</h3>
 
@@ -76,6 +80,37 @@
 <h3 id='how-to-run' class='heading'>How to Run</h3>
 
 <p>Nothing to Run.</p>
+<h3 id='usage' class='heading'>Usage</h3>
+<pre class="highlight plaintext"><code>import Neuro
+import Depot
+
+import Alchemy
+import Hermes
+
+import Foundation
+
+let transport = FoundationHTTP(backgroundSessionIdentifier: self.invocation.debugDescription)
+let address = FoundationHTTP.Address(string: "https://trueimage.acronis.com/")!
+
+let explorer = HermesExplorer()
+let receipt = HermesExplorer.Receipt(input: address, transport: transport)
+
+let hermes = try! explorer.explore(with: receipt)
+
+let login = "artem.olkov@acronis.com"
+let origin = try! hermes.origin(for: login)
+
+let hestiaExplorer = HestiaCloudExplorer()
+let hestiaCloudReceipt = HestiaCloudExplorer.Receipt(root: address, input: origin, transport: transport)
+
+let hestia = try! hestiaExplorer.explore(with: hestiaCloudReceipt)
+
+let hestiaLogin = login
+let hestiaPassword = "qwe123QWE"
+
+let credentials = try! hestia.authorize(login: hestiaLogin, password: hestiaPassword)
+let _ = try! hestia.authorize(with: credentials)
+</code></pre>
 <h3 id='authors' class='heading'>Authors</h3>
 
 <ul>

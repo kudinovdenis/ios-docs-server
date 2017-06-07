@@ -11,7 +11,7 @@ RUN \
     apk del git && \
     go build -o /srv/ios-docs-server && \
     rm -rf /go/src/*
-    
+
 RUN ls /srv
 RUN ls /srv/static
 

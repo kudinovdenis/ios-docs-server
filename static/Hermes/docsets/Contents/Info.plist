@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>CFBundleIdentifier</key>
-      <string>com.jazzy.hermes</string>
+      <string>com.jazzy.hestia</string>
     <key>CFBundleName</key>
-      <string>Hermes</string>
+      <string>Hestia</string>
     <key>DocSetPlatformFamily</key>
-      <string>hermes</string>
+      <string>hestia</string>
     <key>isDashDocset</key>
       <true/>
     <key>dashIndexFilePath</key>
