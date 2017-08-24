@@ -1,0 +1,22 @@
+version: '2'
+services:
+
+    ios-docs-service:
+        build:
+          context: ./
+          dockerfile: Dockerfile
+        hostname: ios-docs-service
+        container_name: ios-docs-service
+        restart: always
+
+        logging: &default_logging
+            driver: json-file
+            options:
+                max-size: "10m"
+                max-file: "5"
+        
+        ports:
+            - "8989:8989"
+
+        volumes:
+            - ./static:/srv/static
